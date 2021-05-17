@@ -504,7 +504,8 @@ button{
     text-transform:uppercase;
     font-size:45px;
     line-height:134%;
-    font-weight:500; }
+    font-weight:500;
+    margin-bottom:70px; }
 
 @media screen and (max-width: 768px){
       .header-title{
@@ -516,6 +517,21 @@ button{
 
 .header-title span{
       color:#DB019C; }
+
+.header .section-description{
+    font-size:25px;
+    font-family:'Pancetta Pro Regular';
+    font-weight:normal;
+    max-width:825px;
+    margin:0 auto;
+    text-align:center; }
+
+@media screen and (max-width: 576px){
+      .header .section-description{
+        font-size:20px; } }
+
+.header .section-description:last-child{
+      margin-top:30px; }
 
 .action-section{
   background:#322499;
@@ -536,14 +552,14 @@ button{
 
 .action-section .title,
   .action-section .counter{
-    font-size:45px;
+    font-size:33px;
     text-transform:uppercase;
     font-weight:500; }
 
 @media screen and (max-width: 768px){
       .action-section .title,
       .action-section .counter{
-        font-size:32px; } }
+        font-size:23px; } }
 
 @media screen and (max-width: 600px){
       .action-section .title,
@@ -558,6 +574,12 @@ button{
 
 .action-section .btn{
     font-family:'Pancetta Pro Regular';
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:center;
+    justify-content:center;
+    -webkit-box-align:center;
+    align-items:center;
     max-width:200px;
     text-transform:uppercase;
     box-sizing:border-box;
@@ -810,7 +832,7 @@ button{
         .prize-section .prize__wrapp-content{
           -webkit-box-ordinal-group:2;
           order:1;
-          max-width:253px; } }
+          max-width:312px; } }
 
 .prize-section .prize__title{
       font-family:'Pancetta Pro Semibold';
