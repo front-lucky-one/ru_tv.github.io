@@ -31,9 +31,9 @@ var end_date_str = "".concat(end_date.full_year, "-").concat(end_date.month, "-"
     clearInterval(timer);
   } else {
     var res = new Date(ms_left);
-    var timerWithoutDay = "".concat(res.getUTCHours(), ":").concat(res.getUTCMinutes(), ":").concat(res.getUTCSeconds());
-    counterWithDay.innerHTML = "".concat(res.getUTCDate() - 1, "\u0414\u041D\u0415\u0419(\u041D\u042F) ").concat(timerWithoutDay);
-    counterWithoutDay.innerHTML = timerWithoutDay;
+    var timerInnerHtml = "".concat(res.getUTCDate() - 1, "\u0414 ").concat(res.getUTCHours(), ":").concat(res.getUTCMinutes(), ":").concat(res.getUTCSeconds());
+    counterWithDay.innerHTML = timerInnerHtml;
+    counterWithoutDay.innerHTML = timerInnerHtml;
   }
 }, 1000);
 var rulesBlockAll = document.querySelectorAll('.rules-block');
