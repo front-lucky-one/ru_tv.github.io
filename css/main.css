@@ -326,6 +326,62 @@ button{
     .section-title{
       font-size:35px; } }
 
+@media screen and (max-width: 576px){
+    .section-title{
+      font-size:25px; } }
+
+.footer{
+  padding:40px 0;
+  background-color:#02081e; }
+
+.footer .container{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:justify;
+    justify-content:space-between;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column; }
+
+.footer .soc{
+    display:-webkit-box;
+    display:flex;
+    flex-wrap:wrap;
+    -webkit-box-align:center;
+    align-items:center;
+    -webkit-box-pack:center;
+    justify-content:center;
+    margin:-10px;
+    margin-bottom:30px; }
+
+.footer .soc__link{
+      display:-webkit-box;
+      display:flex;
+      -webkit-box-pack:center;
+      justify-content:center;
+      -webkit-box-align:center;
+      align-items:center;
+      border-radius:50%;
+      width:40px;
+      height:40px;
+      border:2px solid white;
+      margin:10px; }
+
+.footer .footer-wrapp-link{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:center;
+    justify-content:center;
+    flex-wrap:wrap; }
+
+.footer .footer-link{
+    color:#ffffff;
+    margin-right:20px;
+    line-height:33px; }
+
+.footer .footer-link:last-child{
+      margin-right:0; }
+
 .header{
   padding:130px 0 130px;
   background-image:url("../images/Group 112.jpg");
@@ -527,7 +583,7 @@ button{
     margin-bottom:60px;
     text-transform:uppercase; }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 585px){
       .participation-section .section-title{
         margin-bottom:30px; } }
 
@@ -539,7 +595,7 @@ button{
     flex-wrap:wrap;
     margin:0 -20px 60px; }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 585px){
       .participation-section .wrapp-empty{
         max-width:415px;
         margin:0 auto 30px; } }
@@ -547,14 +603,20 @@ button{
 .participation-section .empty{
     width:258px;
     text-align:center;
-    margin:20px; }
+    margin:20px;
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column; }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 585px){
       .participation-section .empty{
         width:100%;
         margin:10px;
-        display:-webkit-box;
-        display:flex;
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction:normal;
+        flex-direction:row;
         -webkit-box-align:center;
         align-items:center;
         text-align:left; } }
@@ -570,10 +632,9 @@ button{
       height:255px;
       border-radius:50%;
       background-color:#131a35;
-      margin:0 auto;
       margin-bottom:30px; }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 585px){
         .participation-section .empty__wrapp-img{
           margin:0 10px 0 0;
           width:155px;
@@ -588,7 +649,7 @@ button{
 .participation-section .empty__img{
       max-width:103px; }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 585px){
         .participation-section .empty__img{
           max-width:61px; } }
 
@@ -602,7 +663,7 @@ button{
       font-size:24px;
       line-height:130%; }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 585px){
         .participation-section .empty__title{
           max-width:228px;
           margin:0; } }
@@ -691,8 +752,7 @@ button{
 
 @media screen and (max-width: 576px){
         .prize-section .prize__wrap-img{
-          margin-bottom:30px;
-          margin-right:0;
+          margin:0 0 30px 0;
           max-width:299px;
           height:190px; } }
 
@@ -708,8 +768,7 @@ button{
             text-align:center;
             -webkit-box-ordinal-group:inherit;
             order:inherit;
-            margin-left:0;
-            margin-bottom:30px;
+            margin:0 0 30px 0;
             height:190px; } }
 
 .prize-section .prize__img{
@@ -723,10 +782,6 @@ button{
 @media screen and (max-width: 576px){
         .prize-section .prize__img{
           max-width:200px; } }
-
-@media screen and (max-width: 576px){
-        .prize-section .prize__img_star{
-          display:none; } }
 
 .prize-section .prize__img_mod{
         width:100%;
@@ -814,10 +869,6 @@ button{
     text-transform:uppercase;
     line-height:134%;
     margin-bottom:42px; }
-
-@media screen and (max-width: 576px){
-      .result-section .section-title{
-        font-size:25px; } }
 
 .result-section .section-title span{
       color:#DB019C; }
