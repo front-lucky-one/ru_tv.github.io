@@ -683,6 +683,17 @@ button{
         .participation-section .empty__img{
           max-width:45px; } }
 
+@media screen and (max-width: 585px){
+        .participation-section .empty__img_desktop{
+          display:none; } }
+
+.participation-section .empty__img_phone{
+        display:none; }
+
+@media screen and (max-width: 585px){
+          .participation-section .empty__img_phone{
+            display:block; } }
+
 .participation-section .empty__title{
       font-family:'Pancetta Pro Regular';
       font-weight:400;
